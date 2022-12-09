@@ -17,7 +17,7 @@ int main() {
         } else {
             rightB = tmp;
 
-            if((leftA >= rightA && leftB <= rightB) || (leftA <= rightA && leftB >= rightB)) result++;
+            if((leftA <= rightA && rightA <= leftB) || (rightA <= leftA && leftA <= rightB)) result++; // Overlap
             leftA = leftB = rightA = rightB = tmp = 0;
         }
     }
